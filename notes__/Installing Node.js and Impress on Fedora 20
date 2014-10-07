@@ -1,0 +1,17 @@
+1) Установка Node.js в Fedora 19 или 20:
+оригинальная статья:
+https://github.com/joyent/node/wiki/installing-node.js-via-package-manager
+
+su
+curl -sL https://rpm.nodesource.com/setup | bash -
+yum groupinstall 'Development Tools'
+yum install -y nodejs
+
+2) Установка Impress Application Server (команды выполняются без sudo)
+npm install impress
+npm install pg (поддержка PostgreSQL)
+(http://habrahabr.ru/post/168601/ - статья для установки и настройки 
+PostgreSQL)
+
+3) Открытие 80-го порта:
+iptables -I INPUT -p tcp --dport 80 -m state --state NEW -j ACCEPT

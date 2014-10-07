@@ -1,0 +1,22 @@
+﻿SID: @.sid@; Empty: @.empty@; Title: @title@,
+nNull: @.nNull@,
+bTrue: @.bTrue@,
+bFalse: @.bFalse@,
+dData: @.dData@,
+aArray: @.aArray@,
+oObj: @.oObj@,
+oObj.a: @.oObj.a@,
+oObj.a.b @.oObj.a.b@,
+<hr>
+@[users]@
+  <div>
+    User name: @.name@<br/>
+    User age: @.age@<br/>
+    Email addresses:
+    <ul>
+      @[emails]@
+        <li>@.value@</li>
+      @[/emails]@
+    </ul>
+  </div>
+@[/users]@
