@@ -39,6 +39,7 @@
   <script type="text/javascript" src="/js/slickgrid/slick.editors.js"></script>
 
   <script type="text/javascript" src="/js/init.js"></script>
+  <script src="/js/queries_test.js"></script>
 </head>
 <body>
   <div id="header">
