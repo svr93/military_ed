@@ -1,15 +1,14 @@
 module.exports = function(client, callback) {
-	console.log(client.query);
-    //var connection = pgsqlConnection.connection;
+	var connection = pgsqlConnection.connection;
     
-    send();
-
-    function send() {
-        var response = {
-            code: 200,
-            response: 'OK'
-        }
-        client.context.data = response;
+    connection.query('SELECT * FROM objects', function(err, result) {
+		if (err) throw err;
+		
+		send(result.rows);
+	});
+	
+	function send(data) {       
+        client.context.data = data;
         callback();
     }
 }
