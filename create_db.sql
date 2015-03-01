@@ -2,24 +2,28 @@ DROP TABLE objects;
 
 CREATE TABLE objects (
   id smallserial,
-  code varchar(10),
-  height integer
+  radial_distance_ec integer,
+  polar_angle_ec numeric(3, 2),
+  azimuth_angle_ec numeric(3, 2)
 );
 
 INSERT INTO objects VALUES (
   DEFAULT,
-  'US_KH-11',
-  298000
+  298000,
+  1.1,
+  1.2
 );
 
 INSERT INTO objects VALUES (
   DEFAULT,
-  'US_KH-11',
-  348000
+  298001,
+  1.2,
+  1.3
 );
 
 INSERT INTO objects VALUES (
   DEFAULT,
-  'US_KH-11',
-  398000
+  298002,
+  1.2,
+  1.3
 );
