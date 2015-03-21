@@ -1,6 +1,15 @@
 {
   "name": "target_environment_server",
+  "version": "1.0",
+  "description": "The part of military project",
   "author": "Vladimir Shamsheev <svr93@i.ua>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svr93/military_ed"
+  },
   "dependencies": {
     "impress": "0.1.111",
     "pg": "3.5.0"
