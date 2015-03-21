@@ -1,0 +1,8 @@
+{
+  "name": "target_environment_server",
+  "author": "Vladimir Shamsheev <svr93@i.ua>",
+  "dependencies": {
+    "impress": "0.1.111",
+    "pg": "3.5.0"
+  }
+}
