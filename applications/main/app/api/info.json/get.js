@@ -3,6 +3,9 @@ module.exports = function(client, callback) {
     
     connection.query('SELECT * FROM objects', function(err, result) {
 		if (err) throw err;
+    console.log('!!!');
+    console.log(result.rows);
+    console.log('!!!');
 		
 		send(result.rows);
 	});
