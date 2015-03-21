@@ -1,6 +1,5 @@
 {
   "name": "target_environment_server",
-  "version": "1.0",
   "description": "The part of military project",
   "author": "Vladimir Shamsheev <svr93@i.ua>",
   "scripts": {
